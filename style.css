@@ -7,6 +7,7 @@ body {
     overflow: hidden;
 }
 
+
 .topnav a {
     float: left;
     color: #23c26d;
@@ -50,7 +51,7 @@ p{
 }  
 
 img{
-    width: 100%;
+    width: 75%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
