@@ -62,9 +62,15 @@ img{
     display:block;
 }
 
+.tableauPlaceholder{
+    width: 50%;
+    height: auto;
+}
 
 
-
+hr{
+    style="height:30px; color:chartreuse"
+  }
 
 
 /* .navbar-brand{
