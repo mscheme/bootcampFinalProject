@@ -19,30 +19,48 @@ d3.json("/data").then(data =>{
             <td>${item.energy}</td>
             </tr>`
         })
-        d3.selectAll("#Btn-artist").on("click", updateFilters);
+        d3.selectAll("#Btn").on("click", updateFilters);
+        
 
         function updateFilters(){
+            // console.log("made it this far")
             // prevent auto refresh
             d3.event.preventDefault();
 
             // Save the elemnet, value, and id of the filter that was changed
-            let filterNames = ["filter-artist", "filter-songs"];
+            let filterNames = ["#exampleDataList", "#filter-songs"];
+            // console.log("before filternames")
             let filters = {};
+            // console.log(filterNames)
             // debug here
 
-            for (id of filterNames){
-                let changedElement = d3.select(idFilters);
+            for (fltrid of filterNames){
+                let changedElement = d3.select(fltrid)
+                // console.log(changedElement) 
+                console.log(`this is id ${fltrid}`)
                 // needs to be an input value in here instead of values
                 let elementValue = changedElement.property("value");
+                console.log(elementValue)
                 let filterId = changedElement.attr("id");
-                console.log(`filters=${idFilters}`)
+                console.log(`filters=${fltrid}`)
 
-                if (elementValue) {
-                    filter[filterId] = elementValue;
-                }
-                else{
-                    delete filters[filterId];
-                }
+                var returned_songs = []
+                // var something = data.includes(elementValue)
+                console.log("randomwords", Object.values(data));
+                let dataArray = Object.values(data);
+                let filteredData = dataArray.filter(function(search){
+                    let parsedData = Object.values(data);
+                    // search.artist_name == elementValue;
+                    console.log('what is this song?', parsedData);
+                })
+                console.log("this should be the returned pleaseee", filteredData);
+
+                // if (elementValue) {
+                //     filter[filterId] = elementValue;
+                // }
+                // else{
+                //     delete filters[filterId];
+                // }
             }
             
             // call function to apply all filters and rebuild the table
