@@ -1,4 +1,7 @@
 
-username = 'YOUR POSTGRES USERNAME HERE'
+# username = 'YOUR POSTGRES USERNAME HERE'
 
-password = 'YOUR POSTGRES PASSWORD HERE'
+# password = 'YOUR POSTGRES PASSWORD HERE'
+
+username = 'postgres'
+password = 'postgres'
