@@ -10,39 +10,52 @@ body {
 
 .topnav a {
     float: left;
-    color: #23c26d;
+    color: #94f887;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #5e8441;
+    background-color: #69f556;
     color: black;
 }
   
   /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #9cdc6c;
+    background-color: #69f556;
     color: black;
 }
 
 h1{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #9cdc6c;
+    color: #eafee7;
     text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    
 }
 
+
 h2{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    color: #ceeeb6;
+    color:#94F887;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #f88794;
     text-align: center;
 }
 
@@ -64,13 +77,15 @@ img{
 
 .tableauPlaceholder{
     width: 50%;
-    height: auto;
+    height: 50auto;
 }
 
 
 hr{
     style="height:30px; color:chartreuse"
-  }
+}
+
+
 
 
 /* .navbar-brand{
