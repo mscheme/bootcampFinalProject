@@ -2,7 +2,7 @@ body {
     background-color: black
 }
 
-.topnav {
+/* .topnav {
     background-color:black;
     overflow: hidden;
 }
@@ -19,16 +19,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Change the color of links on hover */
-.topnav a:hover {
+/* .topnav a:hover {
     background-color: #69f556;
     color: black;
 }
   
   /* Add a color to the active/current link */
-.topnav a.active {
+/* .topnav a.active {
     background-color: #69f556;
     color: black;
-}
+} */ 
 
 h1{
     margin-bottom: 20px;
