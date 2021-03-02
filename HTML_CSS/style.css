@@ -2,10 +2,14 @@ body {
     background-color: black
 }
 
-/* .topnav {
+.topnav {
     background-color:black;
     overflow: hidden;
-}
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: -1;
+} 
 
 
 .topnav a {
@@ -19,22 +23,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Change the color of links on hover */
-/* .topnav a:hover {
+.topnav a:hover {
     background-color: #69f556;
     color: black;
 }
   
   /* Add a color to the active/current link */
-/* .topnav a.active {
+.topnav a.active {
     background-color: #69f556;
     color: black;
-} */ 
+} 
 
 h1{
+    padding-top: 50px;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #eafee7;
+    color: #69f556;
     text-align: center;
     font-style: oblique;
     font-weight: bold;
@@ -82,35 +87,5 @@ img{
 
 
 hr{
-    style="height:30px; color:chartreuse"
+    style="height:30px; color:chartreuse";
 }
-
-
-
-
-/* .navbar-brand{
-    font-size: 25px
-}
-
-.nav-link{
-    font-size: 20px
-} */
-
-/* .display-4 {
-    text-align: center;
-    color:green
-    font-weight:bold;
-  } */
-
-  /* h1 {
-    text-align: center;
-    background-color: grey;
-    color: red;
-  }
-
-  h1 {
-    text-align: center;
-    background-color: grey;
-    color: red;
-  } */
-
