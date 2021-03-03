@@ -1,0 +1,303 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4NERDZ</title>
+    <!-- bootstarp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- <link rel="stylesheet" href="/static/css/style_old.css" /> -->
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <!-- <a href="#visuals">Visuals</a> -->
+      <!--hyper for presentation call it stats for nerds-->
+      <a href="/predictor">Predict</a>
+      <a href="/stats">Stats</a>
+      <a class="active" href="/4nerdz">Model</a>
+    </div>
+    <h1 style="font-size: 50px">How We Did It</h1>
+
+    <h2>Song List Generation</h2>
+    <div class="container" id="boxsheet">
+      <h5>Introduction</h5>
+      <div class="row">
+        <p class="list">
+          Machine Learning is a hot topic in business today. Businesses want to
+          predict customer wants and curate to their needs to make the buying
+          process better for both.This project uses kMeans clustering Machine
+          Learning to power a web-app. This web-app provides the user with a
+          song list to explore based on musical characteristics of a song they
+          choose. The following slides highlight this process in the context of
+          machine learning with Spotify music data.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="boxsheet">
+      <div class="row">
+        <h5>How Spotify Learns vs kMeans Model</h5>
+        <div>
+          <table class="table table-success table-striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Supervised?</th>
+                <th>Audio Characteristics</th>
+                <th>User Input</th>
+                <th>NLP</th>
+                <th>Summary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Spotify</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Multiple inputs, individualized</td>
+              </tr>
+              <tr>
+                <td>kMeans Model</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Clustering by Music characteristics, generalized</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Natural Language Process</h4>
+          <p class="p21">Analyze the language, lyrics and content of a song.</p>
+
+          <h4 style="color: #94f887">Raw Audio Analyzation</h4>
+          <p style="color: #94f887" class="p21">
+            Detects the “vibe” or “mood” of a song’s audio and decides whether
+            it’s upbeat, chill, heavy, minimal, instrumental etc...
+          </p>
+
+          <h4>Collaborative Filtering</h4>
+          <p class="p21">
+            Compares new songs to a listener’s current habits to decide what
+            will suit their tastes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="boxsheet">
+      <!-- <div class="row"> -->
+      <!-- <h3>Machine Learning Steps</h3> -->
+      <!-- </div> -->
+      <div class="row">
+        <div class="col">
+          <h5>Machine Learning Steps</h5>
+          <div class="list">
+            <ul>
+              <li>Spotify data sourced from Kaggle and added to Postgres</li>
+              <li>
+                SQLAlchemy used to extract data into jupyter notebook/pandas
+                dataframe
+              </li>
+              <li>Scaled feature values to 0-1</li>
+              <li>
+                Perform K means to establish clusters
+                <ul>
+                  <li>Use Elbow method to evaluate cluster size</li>
+                  <li>
+                    Validate recommendations vs cluster size via human sampling
+                  </li>
+                </ul>
+              </li>
+              <li>Run K means with chosen cluster size</li>
+              <li>Upload data for song recommendation platform</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <img src="/static/images/ml_stat.jpg" alt="elbow method" />
+          <p class="img_txt">
+            K - Clusters Produce Y Inertia Optimal Cluster Number Is At The
+            Elbow: Where Distortion/Inertia Start Decreasing In A Linear
+            Fashion.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="boxsheet">
+      <div class="row">
+        <div class="col">
+          <h5>Scaled Data</h5>
+
+          <p class="list2">
+            Scaling data part art and part science to ensure inputs are weighted
+            by importance
+          </p>
+          <p class="list2">
+            The following musical characteristics were scaled from 0-1:
+          </p>
+          <div class="list">
+            <ul>
+              <li>acousticness</li>
+              <li>danceability</li>
+              <li>energy</li>
+              <li>valence</li>
+              <li>liveness</li>
+              <li>instrumentalness</li>
+            </ul>
+          </div>
+          <!-- <p class="list2">Acousticness, danceability, energy, valence, liveness, instrumentalness</p> -->
+          <p class="list2">
+            Other musical features were scaled to 0-1 with Year and Popularity
+            reduced to prevent excess influence
+          </p>
+          <div>
+            <table class="table table-success table-striped">
+              <thead>
+                <tr>
+                  <th>Measurement</th>
+                  <th>Popularity</th>
+                  <th>Year</th>
+                  <th>Key</th>
+                  <th>Loudness dB</th>
+                  <th>Tempo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Original Scale</td>
+                  <td>0-100</td>
+                  <td>1920-2021</td>
+                  <td>0-11</td>
+                  <td>-60 - 3.855</td>
+                  <td>0 - 243.507</td>
+                </tr>
+                <tr>
+                  <td>Scaling Applied</td>
+                  <td>/1000</td>
+                  <td>/2021/10</td>
+                  <td>/11</td>
+                  <td>/60</td>
+                  <td>/244</td>
+                </tr>
+                <tr>
+                  <td>Notes</td>
+                  <td>Reduced to prevent overindexing</td>
+                  <td>Reduced to prevent overindexing</td>
+                  <td>Scaled to fit into 0-1</td>
+                  <td>Scaled to fit into 0-1</td>
+                  <td>Scaled to fit into 0-1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="boxsheet">
+      <div class="row">
+        <div class="col">
+          <h5>Limitations of Elbow Method for Multiple Feature Data</h5>
+          <div class="list">
+            <ul>
+              <li>
+                Inertia is a measure of the sum of the squares of distances from
+                the cluster center. Smaller inertia means a tighter cluster of
+                data.
+              </li>
+              <li>
+                The Elbow indicates the point where additional clusters starts
+                to yield less dramatic increases in model effectiveness.
+              </li>
+              <li>
+                When there are many dimensions to the input data the elbow
+                method can reach linearity before the practitioner determines
+                the results to be optimized.
+              </li>
+              <li>
+                The team used data sampling of the output to determine cluster
+                size desired.
+              </li>
+              <li>The tradeoff was machine computational time</li>
+              <li>
+                The team planned to develop only a single model for the Spotify
+                data so accuracy was more important than computational time
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="boxsheet">
+      <div class="row">
+        <h5>Selected Clusters vs Elbow Method Suggested</h5>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="/static/images/k1000model.png" alt="1000 Model" />
+          <p style="padding-bottom: 20px">
+            The Elbow method would have produced cluster sizes as large as 250
+            songs
+          </p>
+        </div>
+        <!-- <div class="col">
+            <p>The Elbow method would have produced cluster sizes as large as 250 songs</p>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="/static/images/2200model.png" alt="2200 model" />
+          <p>
+            The chosen model clusters were half the size resulting in better
+            song recommendations
+          </p>
+        </div>
+        <!-- <div class="col">
+                <p>The chosen model clusters were half the size resulting in better song recommendations</p>
+            </div> -->
+      </div>
+    </div>
+    <div class="container" id="boxsheet">
+      <div class="row">
+        <h5>Predictor Steps</h5>
+        <div class="list">
+          <ul>
+            <li>
+              Using the kMeans model assign cluster id to the Spotify list of
+              songs and artists
+            </li>
+            <li>
+              Use javascript to power the predictor:
+              <ul>
+                <li>Allow the user to type in an artist name</li>
+                <li>Read artist selected when artist submit button clicked</li>
+                <li>Return list of selected artist and their songs</li>
+                <li>Read selected song when song submit button clicked</li>
+                <li>
+                  Use the cluster number from kMeans model to find recommended
+                  songs
+                </li>
+                <li>
+                  Return recommendations to table and Voila! The user has new
+                  songs to explore.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
