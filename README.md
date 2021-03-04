@@ -53,17 +53,17 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 |Spotify |Yes |Yes |Yes |Yes |Multiple inputs, individualized
 |SongFinder|No |Yes |No |No|kMeans Clustering by Music characteristics, generalized
 
-## All of these are used by Spotify. SongFinder uses Spotify Raw Audio Analyzation data.
+### Spotify uses all of these. SongFinder only uses Spotify Raw Audio Analyzation data.
 
 
-##### Natural Language Processing
-Analyses the language, lyrics and content of a song.
+> ##### Natural Language Processing
+>> Analyses the language, lyrics and content of a song.
 
-##### Raw Audio Analyzation
-Detects the “vibe” or “mood” of a song’s audio and decides whether it’s upbeat, chill, heavy, minimal, instrumental etc... 
+> ##### Raw Audio Analyzation
+>> Detects the “vibe” or “mood” of a song’s audio and decides whether it’s upbeat, chill, heavy, minimal, instrumental etc... 
 
-##### Collaborative Filtering
-Compares new songs to a listener’s current habits to decide what will suit their tastes.
+> ##### Collaborative Filtering
+>>Compares new songs to a listener’s current habits to decide what will suit their tastes.
 
 
 ### Machine Learning Steps
@@ -94,7 +94,11 @@ Compares new songs to a listener’s current habits to decide what will suit the
 
 ![cluster1000](data_and_ml/elbow_method_model.PNG "cluster1000")
 
-The Elbow method would have produced cluster sizes as large as 250 songs
+The Elbow method would have produced cluster sizes as large as 250 songs  
+  
+    
+      
+  
 
 
 ![cluster2200](data_and_ml/selected_model.PNG "cluster2200")
