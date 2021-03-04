@@ -38,10 +38,13 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 
 #### Machine Learning 
 
-Machine Learning is a hot topic in business today. Businesses want to predict customer wants and curate to their needs to make the buying process better for both.
-This project uses kMeans clustering Machine Learning to power a web-app. This web-app provides the user with a song list to explore based on musical characteristics of a song they choose.
+> Machine Learning is a hot topic in business today.
+> Businesses want to predict customer wants and curate to their needs to make the buying process better for both.  
+>   
+> This project uses kMeans clustering Machine Learning to power a web-app. 
+> This web-app provides the user with a song list to explore based on musical characteristics of a song they choose.
 
-The following  paragraphs highlight this process in the context of machine learning with Spotify music data
+##### The following  paragraphs highlight this process in the context of machine learning with Spotify music data
 
 #####   How Spotify Learns vs kMeans Model
 How Spotify Learns vs kMeans Model
