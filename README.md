@@ -59,19 +59,34 @@ Compares new songs to a listener’s current habits to decide what will suit the
 
 ### Machine Learning Steps
 
-- Spotify data sourced from Kaggle and added to Postgres 
-- SQLAlchemy used to extract data into jupyter notebook/pandas dataframe
-- Scaled feature values to 0-1
-- Perform K means to establish clusters
-- Use Elbow method to evaluate cluster size
-- Validate recommendations vs cluster size via human sampling- 
-- Run K means with chosen cluster size
-- Upload data for song recommendation platform
-
-![Elbow](data_and_ml/ElbowMethodK.png "ElbowMethod")
+1. Spotify data sourced from Kaggle and added to Postgres 
+2. SQLAlchemy used to extract data into jupyter notebook/pandas dataframe
+3. Scaled feature values to 0-1
 
 
-K - Clusters Produce Y Inertia
-Optimal Cluster Number Is At The Elbow: Where Distortion/Inertia Start Decreasing In A Linear Fashion.
+ |Measurement|popularity|year|key|loudness dB|tempo|
+|:-----|:----:|----:|----:|----:|----:|
+|Original Scale|0-100 |1920-2021 |0-11 |-60 - 3.855 |0 - 243.507|
+|Scaling Applied|/1000 |/2021/10 |/11 |/60 |/244 |
+|Notes |Reduced to prevent overindexing |Reduced to prevent overindexing|Scaled to fit into 0-1|Scaled to fit into 0-1|Scaled to fit into 0-1|
+
+
+
+
+4. Perform K means to establish clusters
+5. Use Elbow method to evaluate cluster size
+
+  ![Elbow](data_and_ml/ElbowMethodK.png "ElbowMethod")
+  K - Clusters Produce Y Inertia
+  Optimal Cluster Number Is At The Elbow: Where Distortion/Inertia Start Decreasing In A Linear Fashion.
+
+7. Validate recommendations vs cluster size via human sampling- 
+8. Run K means with chosen cluster size
+9. Upload data for song recommendation platform
+
+
+
+
+
 
 
