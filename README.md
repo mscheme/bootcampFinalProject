@@ -56,14 +56,14 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 ### Spotify uses all of these. SongFinder only uses Spotify Raw Audio Analyzation data.
 
 
-> ##### Natural Language Processing
->> Analyses the language, lyrics and content of a song.
+##### Natural Language Processing
+> Analyses the language, lyrics and content of a song.
 
-> ##### Raw Audio Analyzation
->> Detects the “vibe” or “mood” of a song’s audio and decides whether it’s upbeat, chill, heavy, minimal, instrumental etc... 
+##### Raw Audio Analyzation
+> Detects the “vibe” or “mood” of a song’s audio and decides whether it’s upbeat, chill, heavy, minimal, instrumental etc... 
 
-> ##### Collaborative Filtering
->>Compares new songs to a listener’s current habits to decide what will suit their tastes.
+##### Collaborative Filtering
+>Compares new songs to a listener’s current habits to decide what will suit their tastes.
 
 
 ### Machine Learning Steps
