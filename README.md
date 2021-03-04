@@ -47,7 +47,6 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 ##### The following  paragraphs highlight this process in the context of machine learning with Spotify music data
 
 #####   How Spotify Learns vs kMeans Model
-How Spotify Learns vs kMeans Model
   
   |Model|Supervised?|Audio Characteristics|User Input|NLP|Summary|
 |:-----|:----:|----:|----:|----:|----:|
