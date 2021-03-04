@@ -77,7 +77,7 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 |:-----|:----:|----:|----:|----:|----:|
 |Original Scale|0-100 |1920-2021 |0-11 |-60 - 3.855 |0 - 243.507|
 |Scaling Applied|/1000 |/2021/10 |/11 |/60 |/244 |
-|Notes |Reduced to prevent overindexing |Reduced to prevent overindexing|Scaled to fit into 0-1|Scaled to fit into 0-1|Scaled to fit into 0-1|
+|Notes |Reduced to prevent overindexing |Reduced to prevent overindexing |Scaled to fit into 0-1 |Scaled to fit into 0-1 |Scaled to fit into 0-1 |
 
 
 
