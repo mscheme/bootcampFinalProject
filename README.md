@@ -11,7 +11,7 @@ Original Data from: https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-1
     
     Machine Learning kMeans Clustering was used to group almost 100K songs into clusters. The cluster-id assigned in the kMeans clustering became the queried field to find and return songs to the user
     
-    The site can be accessed at [SongFinder](https://songfinder-finalproject.herokuapp.com/)
+    The site can be accessed at ![SongFinder](https://songfinder-finalproject.herokuapp.com/)
 
 
 
