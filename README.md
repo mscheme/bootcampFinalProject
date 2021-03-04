@@ -78,9 +78,8 @@ Compares new songs to a listener’s current habits to decide what will suit the
 
   ![Elbow](data_and_ml/ElbowMethodK.png "ElbowMethod")
   
-  K - Clusters Produce Y Inertia  
-  
-  Optimal Cluster Number Is At The Elbow: Where Distortion/Inertia Start Decreasing In A Linear Fashion.
+ > K - Clusters Produce Y Inertia  
+ > Optimal Cluster Number Is At The Elbow: Where Distortion/Inertia Start Decreasing In A Linear Fashion.
 
 7. Validate recommendations vs cluster size via human sampling
 
