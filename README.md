@@ -44,7 +44,7 @@ How Spotify Learns vs kMeans Model
 |Spotify |Yes |Yes |Yes |Yes |Multiple inputs, individualized
 |SongFinder|No |Yes |No |No|kMeans Clustering by Music characteristics, generalized
 
-## All of these are used by SPotify. SOngFinder uses The data from SPotify  Raw Audio Analyzation
+## All of these are used by Spotify. SongFinder uses Spotify Raw Audio Analyzation data.
 
 
 ##### Natural Language Processing
@@ -57,5 +57,20 @@ Detects the “vibe” or “mood” of a song’s audio and decides whether it�
 Compares new songs to a listener’s current habits to decide what will suit their tastes.
 
 
+### Machine Learning Steps
+
+- Spotify data sourced from Kaggle and added to Postgres 
+- SQLAlchemy used to extract data into jupyter notebook/pandas dataframe
+- Scaled feature values to 0-1
+- Perform K means to establish clusters
+- Use Elbow method to evaluate cluster size
+- Validate recommendations vs cluster size via human sampling- 
+- Run K means with chosen cluster size
+- Upload data for song recommendation platform
+
+
+
+K - Clusters Produce Y Inertia
+Optimal Cluster Number Is At The Elbow: Where Distortion/Inertia Start Decreasing In A Linear Fashion.
 
 
