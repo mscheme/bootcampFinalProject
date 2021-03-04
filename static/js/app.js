@@ -16,10 +16,9 @@ d3.json("/data").then(data =>{
             <td>${item.song_name}</td>
             <td>${item.year}</td>
             <td>${item.popularity}</td>
-            <td>${item.mood}</td>
-            <td>${item.energy}</td>
             </tr>`
         })
+
         d3.selectAll("#Btn").on("click", updateFiltersandBuild);
         d3.selectAll("#Btn-artist").on("click", updateFilterList)
         
@@ -101,15 +100,11 @@ d3.json("/data").then(data =>{
                 let song_name = dataRow["song_name"]
                 let year = dataRow["year"]
                 let popularity = dataRow["popularity"]
-                let mood = dataRow["mood"]
-                let energy = dataRow["energy"]
 
                 row.append("td").text(artist_name);
                 row.append("td").text(song_name);
                 row.append("td").text(year);
                 row.append("td").text(popularity);
-                row.append("td").text(mood);
-                row.append("td").text(energy);
             });
         }
     }
