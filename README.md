@@ -78,17 +78,18 @@ Compares new songs to a listener’s current habits to decide what will suit the
 
   ![Elbow](data_and_ml/ElbowMethodK.png "ElbowMethod")
   
-  K - Clusters Produce Y Inertia
+  K - Clusters Produce Y Inertia  
+  
   Optimal Cluster Number Is At The Elbow: Where Distortion/Inertia Start Decreasing In A Linear Fashion.
 
 7. Validate recommendations vs cluster size via human sampling
 
-![cluster1000} (data_and_ml/elbow_method_model.PNG "cluster1000")
+![cluster1000](data_and_ml/elbow_method_model.PNG "cluster1000")
 
 The Elbow method would have produced cluster sizes as large as 250 songs
 
 
-![cluster2200} (data_and_ml/selected_model.PNG "cluster2200")
+![cluster2200](data_and_ml/selected_model.PNG "cluster2200")
 
 The chosen model clusters were half the size resulting in better song recommendations
 
