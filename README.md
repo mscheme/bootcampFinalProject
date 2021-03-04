@@ -14,7 +14,7 @@ Machine Learning kMeans Clustering was used to group almost 100K songs into clus
 The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 
 
-#### Software and Libraries Used
+#### Programs and Libraries Used
 
  - Jupyter notebook - Python:
  > import numpy as np  
