@@ -49,7 +49,7 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 #####   How Spotify Learns vs kMeans Model
   
   |Model|Supervised?|Audio Characteristics|User Input|NLP|Summary|
-|:-----|:----:|----:|----:|----:|----:|
+|:-----|:----:|:----:|:----:|:----:|:----:|
 |Spotify |Yes |Yes |Yes |Yes |Multiple inputs, individualized
 |SongFinder|No |Yes |No |No|kMeans Clustering by Music characteristics, generalized
 
@@ -74,7 +74,7 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 
 
  |Measurement|popularity|year|key|loudness dB|tempo|
-|:-----|:----:|----:|----:|----:|----:|
+|:-----|:----:|:----:|:----:|:----:|:----:|
 |Original Scale|0-100 |1920-2021 |0-11 |-60 - 3.855 |0 - 243.507|
 |Scaling Applied|/1000 |/2021/10 |/11 |/60 |/244 |
 |Notes |Reduced to prevent overindexing |Reduced to prevent overindexing |Scaled to fit into 0-1 |Scaled to fit into 0-1 |Scaled to fit into 0-1 |
