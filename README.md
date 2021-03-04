@@ -36,7 +36,7 @@ This project uses kMeans clustering Machine Learning to power a web-app. This we
 
 The following  paragraphs highlight this process in the context of machine learning with Spotify music data
 
-#####   `How Spotify Learns vs kMeans Model
+#####   How Spotify Learns vs kMeans Model
 How Spotify Learns vs kMeans Model
   
   |Model|Supervised?|Audio Characteristics|User Input|NLP|Summary|
@@ -96,6 +96,17 @@ The chosen model clusters were half the size resulting in better song recommenda
 9. Upload data for song recommendation platform
 
 
+#### Predictor Steps
+
+
+1. Using the kMeans model assign cluster id to the Spotify list of songs and artists
+2. Use javascript to power the predictor:
+3. Allow the user to type in an artist name
+4. Read artist selected when artist submit button clicked
+5. Return list of selected artist and their songs
+6. Read selected song when song submit button clicked
+7. Use the cluster number from kMeans model to find recommended songs
+8. Return recommendations to table and Voila! The user has new songs to explore.
 
 
 
