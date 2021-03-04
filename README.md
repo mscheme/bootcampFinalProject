@@ -39,7 +39,7 @@ The following  paragraphs highlight this process in the context of machine learn
 #####   `How Spotify Learns vs kMeans Model
 How Spotify Learns vs kMeans Model
   
-  |Model|Supervised?|Audio Characteristics|User Input|NLP|SUmmary|
+  |Model|Supervised?|Audio Characteristics|User Input|NLP|Summary|
 |:-----|:----:|----:|----:|----:|----:|
 |Spotify |Yes |Yes |Yes |Yes |Multiple inputs, individualized
 |SongFinder|No |Yes |No |No|kMeans Clustering by Music characteristics, generalized
@@ -68,6 +68,7 @@ Compares new songs to a listener’s current habits to decide what will suit the
 - Run K means with chosen cluster size
 - Upload data for song recommendation platform
 
+![Elbow](data_and_ml/ElbowMethodK.png "ElbowMethod")
 
 
 K - Clusters Produce Y Inertia
