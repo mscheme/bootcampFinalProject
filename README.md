@@ -14,13 +14,20 @@ Machine Learning kMeans Clustering was used to group almost 100K songs into clus
 The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 
 
-#### Software Used
+#### Software and Libraries Used
 
  - Jupyter notebook - Python:
-    - Pandas
-    - SciKit - kMeans
-    - SQLAlchemy
-    - Matplotlib
+ > import numpy as np  
+ > import pandas as pd  
+ > import psycopg2   
+ > from sklearn.cluster import KMeans  
+ > import matplotlib.pyplot as plt  
+ > import sqlalchemy  
+ > from sqlalchemy.ext.automap import automap_base  
+ > from sqlalchemy.orm import Session  
+ > from sqlalchemy import create_engine, func, inspect, desc  
+ > from config import username, password  
+ > import io  
     
  - Flask w/SQLALchemy
  - Postgres
