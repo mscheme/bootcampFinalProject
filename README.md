@@ -34,6 +34,7 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
  - Postgres
  - Javascript, D3
  - HTML w/Bootstrap, CSS
+ - Tableau Public
  
  
 
