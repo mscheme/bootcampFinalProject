@@ -44,7 +44,7 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 > Businesses use machine learning to predict customer's needs and behaviors so that they can create a more beneficial consumer experience while benefitting the business and the customer. 
 > This project uses kMeans clustering Machine Learning to power a web app. 
 <!-- > This web-app provides the user with a song list to explore based on musical characteristics of a song they choose. -->
->This web app lets the user discover new music based on the musical characteristics of their chosen artist and song.
+>This web app lets the user discover new music based on the musical characteristics of their chosen track.
 
 ##### The following  paragraphs highlight this process in the context of machine learning with Spotify music data
 
@@ -66,7 +66,7 @@ The site can be accessed at: https://songfinder-finalproject.herokuapp.com/
 
 ##### Collaborative Filtering
 <!-- > Compares new songs to a listener’s current habits to decide what will suit their tastes. -->
-> Compares songs in the database to the user's current selection and outputs recommendations based on similar musical qualities.
+> Compares songs in the database to the user's current input then it outputs recommendations based on similar musical qualities.
 
 ### Machine Learning Steps
 
